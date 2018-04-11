@@ -1,0 +1,10 @@
+server:
+  port: ${vcap.application.port:8761}
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: false
+  server:
+    wait-time-in-ms-when-sync-empty: 0
